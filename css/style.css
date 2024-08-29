@@ -274,4 +274,72 @@ button {
   font-size: 2em;
 }
 
+.section-portfolio {
+  background: #ffffff;
+}
+.section-portfolio .container {
+  padding: 67px 0;
+}
+.section-portfolio .container header {
+  margin-bottom: 40px;
+}
+.section-portfolio .container header h1 {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #20b15a;
+}
+.section-portfolio .container header h2 {
+  max-width: 495px;
+  max-height: 90px;
+  font-weight: 600;
+  font-size: 1.875em;
+  color: #000000;
+}
+.section-portfolio .container .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-portfolio .container .portfolio .portfolio-column-1 {
+  flex: 1;
+  margin-right: 95px;
+}
+.section-portfolio .container .portfolio .portfolio-column-1 .portfolio-item:nth-child(1) {
+  width: 561px;
+  height: 496.36px;
+  margin-bottom: 98.64px;
+}
+.section-portfolio .container .portfolio .portfolio-column-1 .portfolio-item:nth-child(2) {
+  width: 561px;
+  height: 677.02px;
+}
+.section-portfolio .container .portfolio .portfolio-column-2 {
+  flex: 1;
+}
+.section-portfolio .container .portfolio .portfolio-column-2 .portfolio-item:nth-child(1) {
+  width: 561.15px;
+  height: 675.07px;
+  margin-bottom: 95.93px;
+}
+.section-portfolio .container .portfolio .portfolio-column-2 .portfolio-item:nth-child(2) {
+  width: 554px;
+  height: 504.52px;
+}
+.section-portfolio .container .portfolio .portfolio-item {
+  color: #000000;
+}
+.section-portfolio .container .portfolio .portfolio-item h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 14.26px;
+}
+.section-portfolio .container .portfolio .portfolio-item p {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+.section-portfolio .container .portfolio .portfolio-item img {
+  margin-bottom: 42.79px;
+}
+
 /*# sourceMappingURL=style.css.map */
