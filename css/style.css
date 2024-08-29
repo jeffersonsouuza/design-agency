@@ -1,11 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -340,6 +337,94 @@ button {
 }
 .section-portfolio .container .portfolio .portfolio-item img {
   margin-bottom: 42.79px;
+}
+
+.section-testimonial {
+  background: #ffffff;
+  padding: 122px 0;
+}
+.section-testimonial .container {
+  flex-direction: column;
+  padding: 67px 0;
+}
+.section-testimonial .container header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+}
+.section-testimonial .container header h1 {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #20b15a;
+}
+.section-testimonial .container header h2 {
+  min-width: 495px;
+  min-height: 90px;
+  font-weight: 600;
+  font-size: 1.875em;
+  color: #000000;
+}
+.section-testimonial .container header .slider-control {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-testimonial .container header .slider-control .return,
+.section-testimonial .container header .slider-control .advance {
+  align-self: flex-start;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  padding: 20px 30px;
+}
+.section-testimonial .container header .slider-control .return img,
+.section-testimonial .container header .slider-control .advance img {
+  min-width: 14.36px;
+  min-height: 24.94px;
+}
+.section-testimonial .container header .slider-control .return {
+  border: 1px solid #000000;
+  margin-right: 21px;
+}
+.section-testimonial .container header .slider-control .advance {
+  border: 1px solid #d7f5dc;
+  background-color: #d7f5dc;
+}
+.section-testimonial .container .testimonial {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-testimonial .container .testimonial .testimonial-card {
+  flex: 1;
+  padding: 40px;
+  min-width: 470px;
+  min-height: 260px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 45px;
+}
+.section-testimonial .container .testimonial .testimonial-card p {
+  font-size: 1.125em;
+  margin-bottom: 20px;
+}
+.section-testimonial .container .testimonial .testimonial-card .avatar {
+  display: flex;
+}
+.section-testimonial .container .testimonial .testimonial-card .avatar img {
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(36, 39, 41, 0.1);
+  margin-right: 10px;
+}
+.section-testimonial .container .testimonial .testimonial-card .avatar h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #000000;
+}
+.section-testimonial .container .testimonial .testimonial-card .avatar p {
+  font-size: 1.125em;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
