@@ -1,0 +1,154 @@
+.section-hero {
+  background: #d7f5dc;
+
+  .container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+
+    .logo {
+      padding: 10px;
+      margin: 0 10px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #000000;
+      font-size: 1.5em;
+      span {
+        text-transform: uppercase;
+        color: #f55f1d;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: capitalize;
+
+        &:nth-child(1) {
+          position: relative;
+          &::after {
+            content: "";
+            background: url("/img/icon/arrow-right-down-bold.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+          }
+          a {
+            padding-right: 5px;
+          }
+        }
+
+        &:last-child a {
+          color: #ffffff;
+        }
+
+        &:nth-child(n + 2):nth-child(-n + 5) {
+          margin-left: 30px;
+        }
+
+        a {
+          color: #000000;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .banner-hero {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    .text-hero {
+      position: relative;
+      top: 120px;
+      width: 550px;
+      height: 336px;
+      margin-bottom: 37px;
+      h1 {
+        line-height: 1.4;
+        font-weight: bold;
+        font-size: 3.125em;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+      p {
+        min-width: 472px;
+        min-height: 54px;
+        font-weight: 500;
+        font-size: 1.25em;
+        margin-bottom: 37px;
+      }
+      button {
+        padding: 20px 30px;
+        font-size: 1.25em;
+      }
+    }
+
+    img {
+      max-width: 672px;
+      max-height: 564px;
+    }
+  }
+
+  .tools {
+    background: #f8fff9;
+    top: 0;
+
+    .container-tools {
+      max-width: 1222px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 44px 0 47px 0;
+
+      img:not(:nth-child(5)) {
+        margin-right: 150px;
+      }
+
+      .tools-item__google {
+        width: 88.71px;
+        height: 29.11px;
+      }
+
+      .tools-item__trello {
+        width: 141.94px;
+        height: 29.11px;
+      }
+
+      .tools-item__monday {
+        width: 156.88px;
+        height: 29.11px;
+      }
+
+      .tools-item__notion {
+        width: 80.11px;
+        height: 29.11px;
+      }
+
+      .tools-item__slack {
+        width: 114.29px;
+        height: 29.11px;
+      }
+    }
+
+    .divider-tools {
+      background-color: #d7f5dc;
+      height: 34px;
+      width: 100%;
+    }
+  }
+}

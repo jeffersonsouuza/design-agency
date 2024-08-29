@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-outline {
+  border: 1px solid #20b15a;
+  border-radius: 10px;
+  &:hover {
+    background: rgb(32, 177, 90, 0.7);
+    color: #ffffff !important;
+  }
+}
+
+.button-main {
+  background: #20b15a;
+  border-radius: 10px;
+  border: 1px solid #20b15a;
+  text-transform: capitalize;
+  color: #ffffff;
+  &:hover {
+    background: rgb(32, 177, 90, 0.7);
+  }
+}

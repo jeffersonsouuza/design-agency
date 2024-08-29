@@ -1,0 +1,22 @@
+.section-numbers {
+  display: flex;
+  justify-content: center;
+  padding: 80.5px 151px;
+  .numbers {
+    padding: 40px;
+    text-align: center;
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+    figure {
+      margin-bottom: 15px;
+      figcaption {
+        font-size: 1em;
+        font-weight: 500;
+      }
+    }
+    span {
+      color: #20b15a;
+      font-weight: 600;
+      font-size: 2em;
+    }
+  }
+}
