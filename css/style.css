@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  line-height: 1.4;
 }
 
 ul {
@@ -425,6 +426,138 @@ button {
 .section-testimonial .container .testimonial .testimonial-card .avatar p {
   font-size: 1.125em;
   margin-bottom: 0;
+}
+
+.section-subscribe {
+  background: #ffffff;
+  padding: 91px 0 137px 0;
+}
+.section-subscribe .container {
+  flex-direction: column;
+  text-align: center;
+}
+.section-subscribe .container h1 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: 21px;
+  color: #20b15a;
+}
+.section-subscribe .container h2 {
+  font-size: 1.875em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000000;
+  text-transform: capitalize;
+}
+.section-subscribe .container p {
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  color: #8b8b8b;
+}
+.section-subscribe .container .input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 322px;
+}
+.section-subscribe .container .input-container input {
+  border-radius: 14px;
+  border: 1px solid #000000;
+  padding: 20px 16px;
+  min-width: 596px;
+  min-height: 62px;
+  color: #8b8b8b;
+  width: 100%;
+}
+.section-subscribe .container .input-container button {
+  position: absolute;
+  right: 5px;
+  padding: 8.11px 24.32px;
+  color: #ffffff;
+  background: #f55f1d;
+  border-radius: 14px;
+  border: 1px solid #f55f1d;
+  font-weight: 500;
+  min-height: 52.7px;
+  min-width: 130.65px;
+  cursor: pointer;
+}
+.section-subscribe .container .input-container button:hover {
+  opacity: 0.7;
+}
+
+footer {
+  background: #00ca72;
+}
+footer a {
+  color: #000000;
+}
+footer .container {
+  flex-direction: column;
+}
+footer .container .footer {
+  padding: 67px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container .footer .footer-column-1 {
+  flex: 2;
+}
+footer .container .footer .footer-column-1 h1 {
+  margin-left: 6px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .container .footer .footer-column-1 p {
+  margin-bottom: 20px;
+  font-size: 1.25em;
+}
+footer .container .footer .footer-column-1 .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .container .footer .footer-column-1 .social-media span {
+  margin-right: 10px;
+  width: 40.82px;
+  height: 40.82px;
+  background: #20b15a;
+  border-radius: 50%;
+  padding: 11px 16px;
+  display: flex;
+  justify-content: center;
+}
+footer .container .footer .footer-column-1 .social-media span img {
+  width: 18px;
+  height: 16px;
+}
+footer .container .footer .footer-column-2,
+footer .container .footer .footer-column-3 {
+  flex: 1;
+  text-transform: capitalize;
+}
+footer .container .footer .footer-column-2 h2,
+footer .container .footer .footer-column-3 h2 {
+  font-size: 1.25em;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+footer .container .footer .footer-column-2 li {
+  margin-bottom: 24px;
+}
+footer .container .footer .footer-column-2 li a {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+footer .container .footer .footer-column-3 address {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+footer .container .copyright {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: 29px;
 }
 
 /*# sourceMappingURL=style.css.map */
