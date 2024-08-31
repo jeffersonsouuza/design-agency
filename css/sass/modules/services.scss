@@ -2,7 +2,8 @@
   background: #ffffff;
   .container {
     flex-direction: column;
-    padding: 67px 0;
+    padding-top: 67px;
+    padding-bottom: 67px;
     header {
       position: relative;
       margin-bottom: 40px;
@@ -25,7 +26,7 @@
       display: flex;
       flex-wrap: wrap;
       .services-card {
-        flex: 1;
+        flex: 1 1 280px;
         padding: 50px 30px;
         img {
           background: #d7f5dc;

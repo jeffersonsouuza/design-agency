@@ -1,12 +1,20 @@
 .section-numbers {
   display: flex;
-  justify-content: center;
   padding: 80.5px 151px;
   .numbers {
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
     padding: 40px;
     text-align: center;
     border-right: 1px solid rgba(196, 196, 196, 0.5);
     figure {
+      display: flex;
+      flex-direction: column;
+      img {
+        align-self: center;
+        margin-bottom: 10px;
+      }
       margin-bottom: 15px;
       figcaption {
         font-size: 1em;
@@ -17,6 +25,30 @@
       color: #20b15a;
       font-weight: 600;
       font-size: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-numbers {
+    padding: 80.5px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-numbers {
+    .numbers {
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section-numbers {
+    .numbers {
+      border-right: none;
     }
   }
 }

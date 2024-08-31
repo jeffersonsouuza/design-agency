@@ -18,6 +18,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   max-width: 1222px;
   margin: 0 auto;
@@ -28,6 +33,7 @@ button {
 .button-outline {
   border: 1px solid #20b15a;
   border-radius: 10px;
+  padding: 10px 15px;
 }
 .button-outline:hover {
   background: rgba(32, 177, 90, 0.7);
@@ -38,6 +44,7 @@ button {
   background: #20b15a;
   border-radius: 10px;
   border: 1px solid #20b15a;
+  padding: 10px 15px;
   text-transform: capitalize;
   color: #ffffff;
 }
@@ -45,18 +52,29 @@ button {
   background: rgba(32, 177, 90, 0.7);
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+}
 .section-hero {
   background: #d7f5dc;
 }
 .section-hero .container {
   flex-direction: column;
-  position: relative;
+}
+.section-hero header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
 }
 .section-hero header nav {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   padding: 5px 0;
 }
 .section-hero header nav .logo {
@@ -74,6 +92,8 @@ button {
 .section-hero header nav .menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .section-hero header nav .menu li {
   font-size: 1em;
@@ -82,6 +102,7 @@ button {
 }
 .section-hero header nav .menu li:nth-child(1) {
   position: relative;
+  margin-right: 20px;
 }
 .section-hero header nav .menu li:nth-child(1)::after {
   content: "";
@@ -93,7 +114,7 @@ button {
   position: absolute;
 }
 .section-hero header nav .menu li:nth-child(1) a {
-  padding-right: 5px;
+  padding-right: 1px;
 }
 .section-hero header nav .menu li:last-child a {
   color: #ffffff;
@@ -101,20 +122,12 @@ button {
 .section-hero header nav .menu li:nth-child(n+2):nth-child(-n+5) {
   margin-left: 30px;
 }
-.section-hero header nav .menu li a {
-  color: #000000;
-  padding: 10px 20px;
-}
 .section-hero .banner-hero {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 .section-hero .banner-hero .text-hero {
-  position: relative;
-  top: 120px;
-  width: 550px;
-  height: 336px;
+  flex: 2 1 300px;
   margin-bottom: 37px;
 }
 .section-hero .banner-hero .text-hero h1 {
@@ -125,8 +138,6 @@ button {
   margin-bottom: 10px;
 }
 .section-hero .banner-hero .text-hero p {
-  min-width: 472px;
-  min-height: 54px;
   font-weight: 500;
   font-size: 1.25em;
   margin-bottom: 37px;
@@ -136,8 +147,8 @@ button {
   font-size: 1.25em;
 }
 .section-hero .banner-hero img {
-  max-width: 672px;
-  max-height: 564px;
+  flex: 1 1 160px;
+  object-fit: fill;
 }
 .section-hero .tools {
   background: #f8fff9;
@@ -148,6 +159,7 @@ button {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 44px 0 47px 0;
 }
 .section-hero .tools .container-tools img:not(:nth-child(5)) {
@@ -179,12 +191,53 @@ button {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    margin-bottom: 10px !important;
+  }
+  header .logo {
+    padding: 10px 0 !important;
+    margin: 0 !important;
+  }
+  header .menu li:nth-child(n+2):nth-child(-n+5) {
+    margin-left: 10px !important;
+  }
+  .container-tools {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-tools img:not(:nth-child(5)) {
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container-tools img:not(:nth-child(5)) {
+    margin-right: 100px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-tools img:not(:nth-child(5)) {
+    margin-right: 50px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-tools {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-tools img:not(:nth-child(5)) {
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+}
 .section-services {
   background: #ffffff;
 }
 .section-services .container {
   flex-direction: column;
-  padding: 67px 0;
+  padding-top: 67px;
+  padding-bottom: 67px;
 }
 .section-services .container header {
   position: relative;
@@ -209,7 +262,7 @@ button {
   flex-wrap: wrap;
 }
 .section-services .container .services .services-card {
-  flex: 1;
+  flex: 1 1 280px;
   padding: 50px 30px;
 }
 .section-services .container .services .services-card img {
@@ -251,16 +304,24 @@ button {
 
 .section-numbers {
   display: flex;
-  justify-content: center;
   padding: 80.5px 151px;
 }
 .section-numbers .numbers {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   text-align: center;
   border-right: 1px solid rgba(196, 196, 196, 0.5);
 }
 .section-numbers .numbers figure {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
+}
+.section-numbers .numbers figure img {
+  align-self: center;
+  margin-bottom: 10px;
 }
 .section-numbers .numbers figure figcaption {
   font-size: 1em;
@@ -272,6 +333,21 @@ button {
   font-size: 2em;
 }
 
+@media screen and (max-width: 1024px) {
+  .section-numbers {
+    padding: 80.5px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-numbers .numbers:last-child {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .section-numbers .numbers {
+    border-right: none;
+  }
+}
 .section-portfolio {
   background: #ffffff;
 }
@@ -279,7 +355,7 @@ button {
   padding: 67px 0;
 }
 .section-portfolio .container header {
-  margin-bottom: 40px;
+  margin-bottom: 73px;
 }
 .section-portfolio .container header h1 {
   font-size: 1.25em;
@@ -289,8 +365,6 @@ button {
   color: #20b15a;
 }
 .section-portfolio .container header h2 {
-  max-width: 495px;
-  max-height: 90px;
   font-weight: 600;
   font-size: 1.875em;
   color: #000000;
@@ -301,28 +375,34 @@ button {
 }
 .section-portfolio .container .portfolio .portfolio-column-1 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-right: 95px;
 }
 .section-portfolio .container .portfolio .portfolio-column-1 .portfolio-item:nth-child(1) {
-  width: 561px;
-  height: 496.36px;
+  max-width: 561px;
+  max-height: 496.36px;
   margin-bottom: 98.64px;
 }
 .section-portfolio .container .portfolio .portfolio-column-1 .portfolio-item:nth-child(2) {
-  width: 561px;
-  height: 677.02px;
+  max-width: 561px;
+  max-height: 677.02px;
 }
 .section-portfolio .container .portfolio .portfolio-column-2 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section-portfolio .container .portfolio .portfolio-column-2 .portfolio-item:nth-child(1) {
-  width: 561.15px;
-  height: 675.07px;
+  max-width: 561px;
+  max-height: 675.07px;
   margin-bottom: 95.93px;
 }
 .section-portfolio .container .portfolio .portfolio-column-2 .portfolio-item:nth-child(2) {
-  width: 554px;
-  height: 504.52px;
+  max-width: 561px;
+  max-height: 504.52px;
 }
 .section-portfolio .container .portfolio .portfolio-item {
   color: #000000;
@@ -340,6 +420,21 @@ button {
   margin-bottom: 42.79px;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-portfolio .container {
+    padding: 67px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-portfolio .container .portfolio .portfolio-column-1 {
+    margin-right: 0;
+    flex: 1 1 500px;
+    margin-bottom: 98.64px;
+  }
+  .section-portfolio .container .portfolio .portfolio-column-2 {
+    flex: 1 1 500px;
+  }
+}
 .section-testimonial {
   background: #ffffff;
   padding: 122px 0;
@@ -374,16 +469,17 @@ button {
 }
 .section-testimonial .container header .slider-control .return,
 .section-testimonial .container header .slider-control .advance {
-  align-self: flex-start;
-  min-width: 80px;
-  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   border-radius: 50%;
   padding: 20px 30px;
+  display: flex;
 }
 .section-testimonial .container header .slider-control .return img,
 .section-testimonial .container header .slider-control .advance img {
-  min-width: 14.36px;
-  min-height: 24.94px;
+  align-self: center;
+  max-width: 15px;
+  max-height: 25px;
 }
 .section-testimonial .container header .slider-control .return {
   border: 1px solid #000000;
