@@ -11,20 +11,25 @@
     figure {
       display: flex;
       flex-direction: column;
+      margin-bottom: 15px;
       img {
         align-self: center;
         margin-bottom: 10px;
       }
-      margin-bottom: 15px;
       figcaption {
         font-size: 1em;
         font-weight: 500;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
     span {
       color: #20b15a;
       font-weight: 600;
       font-size: 2em;
+      text-align: center;
     }
   }
 }

@@ -231,13 +231,24 @@ img {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 425px) {
+  .section-hero .banner-hero .text-hero h1 {
+    font-size: 2.125em;
+  }
+  .section-hero .banner-hero .text-hero p {
+    font-size: 1em;
+  }
+  .section-hero .banner-hero .text-hero button {
+    padding: 15px 20px;
+    font-size: 1em;
+  }
+}
 .section-services {
   background: #ffffff;
 }
 .section-services .container {
   flex-direction: column;
-  padding-top: 67px;
-  padding-bottom: 67px;
+  padding: 67px 0 67px 0;
 }
 .section-services .container header {
   position: relative;
@@ -288,6 +299,8 @@ img {
   text-transform: capitalize;
   color: #000000;
   display: flex;
+  max-width: 159px;
+  max-height: 554px;
 }
 .section-services .container .services .services-card .learn-more::after {
   content: "";
@@ -298,10 +311,23 @@ img {
   height: 14px;
   align-self: center;
 }
+.section-services .container .services .services-card .learn-more:hover {
+  background: #f55f1d;
+  border-radius: 10px;
+}
 .section-services .container .services .services-card .learn-more a {
   padding-right: 10px;
+  color: #000000;
+}
+.section-services .container .services .services-card .learn-more a:hover {
+  color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .section-services .container {
+    padding: 67px 15px 67px 15px;
+  }
+}
 .section-numbers {
   display: flex;
   padding: 80.5px 151px;
@@ -326,11 +352,16 @@ img {
 .section-numbers .numbers figure figcaption {
   font-size: 1em;
   font-weight: 500;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section-numbers .numbers span {
   color: #20b15a;
   font-weight: 600;
   font-size: 2em;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -437,7 +468,9 @@ img {
 }
 .section-testimonial {
   background: #ffffff;
-  padding: 122px 0;
+  padding: 122px 0 300px 0;
+  overflow: hidden;
+  position: relative;
 }
 .section-testimonial .container {
   flex-direction: column;
@@ -480,6 +513,7 @@ img {
   max-height: 25px;
 }
 .section-testimonial .container header .slider-control .return {
+  background: transparent;
   border: 1px solid #000000;
   margin-right: 21px;
 }
@@ -487,37 +521,44 @@ img {
   border: 1px solid #d7f5dc;
   background-color: #d7f5dc;
 }
-.section-testimonial .container .testimonial {
+.section-testimonial .testimonial {
+  position: absolute;
+  right: 0;
+  left: 124px;
+  top: 400px;
+  overflow-y: hidden;
   display: flex;
-  flex-wrap: wrap;
+  max-width: 1316px;
+  padding: 0 0 10px 5px;
+  margin: 0 auto;
 }
-.section-testimonial .container .testimonial .testimonial-card {
-  flex: 1;
+.section-testimonial .testimonial .testimonial-card {
   padding: 40px;
+  margin-bottom: 10px;
   min-width: 470px;
   min-height: 260px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin-right: 45px;
 }
-.section-testimonial .container .testimonial .testimonial-card p {
+.section-testimonial .testimonial .testimonial-card p {
   font-size: 1.125em;
   margin-bottom: 20px;
 }
-.section-testimonial .container .testimonial .testimonial-card .avatar {
+.section-testimonial .testimonial .testimonial-card .avatar {
   display: flex;
 }
-.section-testimonial .container .testimonial .testimonial-card .avatar img {
+.section-testimonial .testimonial .testimonial-card .avatar img {
   border-radius: 50%;
   box-shadow: 0 4px 14px rgba(36, 39, 41, 0.1);
   margin-right: 10px;
 }
-.section-testimonial .container .testimonial .testimonial-card .avatar h3 {
+.section-testimonial .testimonial .testimonial-card .avatar h3 {
   font-size: 1.25em;
   font-weight: 600;
   color: #000000;
 }
-.section-testimonial .container .testimonial .testimonial-card .avatar p {
+.section-testimonial .testimonial .testimonial-card .avatar p {
   font-size: 1.125em;
   margin-bottom: 0;
 }
@@ -525,6 +566,11 @@ img {
 @media screen and (max-width: 1200px) {
   .section-testimonial .container {
     padding: 67px 15px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section-testimonial .testimonial {
+    left: 15px;
   }
 }
 .section-subscribe {
