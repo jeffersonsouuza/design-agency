@@ -10,7 +10,7 @@ footer {
       display: flex;
       flex-wrap: wrap;
       .footer-column-1 {
-        flex: 2;
+        flex: 2 1 400px;
         h1 {
           margin-left: 6px;
           margin-bottom: 20px;
@@ -43,7 +43,7 @@ footer {
       }
       .footer-column-2,
       .footer-column-3 {
-        flex: 1;
+        flex: 1 1 150px;
         text-transform: capitalize;
         h2 {
           font-size: 1.25em;
@@ -72,5 +72,11 @@ footer {
       font-weight: 500;
       margin-bottom: 29px;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer-column-1 {
+    margin-bottom: 30px;
   }
 }

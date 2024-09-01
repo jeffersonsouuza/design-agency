@@ -16,8 +16,6 @@
         color: #20b15a;
       }
       h2 {
-        min-width: 495px;
-        min-height: 90px;
         font-weight: 600;
         font-size: 1.875em;
         color: #000000;
@@ -83,5 +81,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-testimonial .container {
+    padding: 67px 15px;
   }
 }
