@@ -685,7 +685,7 @@ footer .container .footer .footer-column-1 .social-media {
   flex-wrap: wrap;
   flex-direction: row;
 }
-footer .container .footer .footer-column-1 .social-media span {
+footer .container .footer .footer-column-1 .social-media a {
   margin-right: 10px;
   width: 40.82px;
   height: 40.82px;
@@ -695,9 +695,9 @@ footer .container .footer .footer-column-1 .social-media span {
   display: flex;
   justify-content: center;
 }
-footer .container .footer .footer-column-1 .social-media span img {
-  width: 18px;
-  height: 16px;
+footer .container .footer .footer-column-1 .social-media a img {
+  max-width: 18px;
+  max-height: 16px;
 }
 footer .container .footer .footer-column-2,
 footer .container .footer .footer-column-3 {

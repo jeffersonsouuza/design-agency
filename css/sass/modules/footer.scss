@@ -25,7 +25,7 @@ footer {
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
-          span {
+          a {
             margin-right: 10px;
             width: 40.82px;
             height: 40.82px;
@@ -35,8 +35,8 @@ footer {
             display: flex;
             justify-content: center;
             img {
-              width: 18px;
-              height: 16px;
+              max-width: 18px;
+              max-height: 16px;
             }
           }
         }
