@@ -1,6 +1,8 @@
 # Agência de Design - Landing Page
 
-![Landing Page](img\landing-page.jpg)
+<p align="center">
+  <img src="img/landing-page.jpg" alt="Landing Page" width="500" height="300">
+</p>
 
 Este projeto é uma landing page para uma agência de design, criada como prática de Flexbox. O projeto utiliza **Sass** para facilitar o gerenciamento de estilos e **Clean-CSS CLI** para minimizar o tamanho do arquivo CSS final.
 
