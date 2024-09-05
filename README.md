@@ -64,3 +64,10 @@ npm run minify-css
 ```
 
 Este comando irá gerar um arquivo minificado style.min.css a partir do style.css original.
+
+## Créditos
+
+Este projeto utilizou o design da **Design Agency Web Landing Page** disponibilizado no Figma Community, para fins de prática e estudo do Flexbox.
+
+- Projeto original: [Design Agency Web Landing Page](<https://www.figma.com/design/BzjhDZhMgRAfyPQhdkmZjx/Design-Agency-Web-Landing-Page-(Community)?node-id=0-1&node-type=CANVAS&t=Km2Wdpf7BKo5HrUF-0>)
+- Autor: [Femi John](https://www.figma.com/@thefemijohn)
