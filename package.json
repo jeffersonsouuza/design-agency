@@ -4,11 +4,10 @@
   "description": "projeto criado para a pratica de flexbox",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch css/sass/style.scss css/style.css",
-    "minify-css": "cleancss --watch -o css/style.min.css css/style.css"
+    "dev": "sass --watch css/sass/style.scss css/style.css",
+    "prod": "sass --watch css/style.css css/style.min.css --style compressed"
   },
   "devDependencies": {
-    "node-sass": "^9.0.0",
-    "clean-css-cli": "^5.3.2"
+    "node-sass": "^9.0.0"
   }
 }
