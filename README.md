@@ -4,14 +4,13 @@
   <img src="img/landing-page.jpg" alt="Landing Page" width="500" height="300">
 </p>
 
-Este projeto é uma landing page para uma agência de design, criada como prática de Flexbox. O projeto utiliza **Sass** para facilitar o gerenciamento de estilos e **Clean-CSS CLI** para minimizar o tamanho do arquivo CSS final.
+Este projeto é uma landing page para uma agência de design, criada como prática de Flexbox. O projeto utiliza **Sass** para facilitar o gerenciamento de estilos e para minimizar o tamanho do arquivo CSS final.
 
 ## Tecnologias Utilizadas
 
 - **HTML5**
 - **CSS3** (com Flexbox)
 - **Sass**
-- **Clean-CSS CLI**
 
 ## Como Configurar o Projeto
 
@@ -52,7 +51,7 @@ Antes de começar, certifique-se de ter o **Node.js** e o **npm** instalados em 
 Para compilar os arquivos Sass e assistir por mudanças, execute o script abaixo:
 
 ```bash
-npm run sass
+npm run dev
 ```
 
 ### Minificando o CSS
@@ -60,7 +59,7 @@ npm run sass
 Para reduzir o tamanho do CSS para produção, use o script:
 
 ```bash
-npm run minify-css
+npm run prod
 ```
 
 Este comando irá gerar um arquivo minificado style.min.css a partir do style.css original.

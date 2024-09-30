@@ -1,8 +1,6 @@
 {
   "name": "desing-agency",
-  "version": "1.0.0",
   "description": "projeto criado para a pratica de flexbox",
-  "main": "index.js",
   "scripts": {
     "dev": "sass --watch css/sass/style.scss css/style.css",
     "prod": "sass --watch css/style.css css/style.min.css --style compressed"
