@@ -4,7 +4,9 @@
   <img src="img/landing-page.jpg" alt="Landing Page" width="500" height="300">
 </p>
 
-Este projeto é uma landing page para uma agência de design, criada como prática de Flexbox. O projeto utiliza **Sass** para facilitar o gerenciamento de estilos e para minimizar o tamanho do arquivo CSS final.
+Este projeto é uma landing page para uma agência de design. O projeto utiliza **Sass** para facilitar o gerenciamento de estilos e para minimizar o tamanho do arquivo CSS final.
+
+Deploy: https://jeffersonsouuza.github.io/design-agency
 
 ## Tecnologias Utilizadas
 
