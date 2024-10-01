@@ -1,5 +1,7 @@
+@use "sass:color";
+
 .section-hero {
-  background: #d7f5dc;
+  background: $green-color-light;
 
   .container {
     flex-direction: column;
@@ -20,15 +22,12 @@
       padding: 5px 0;
 
       .logo {
-        padding: 10px;
-        margin: 0 10px;
+        padding: 10px 0;
         text-transform: capitalize;
-        font-weight: bold;
-        color: #000000;
-        font-size: 1.5em;
+        @include typography-1(20, 700);
         span {
           text-transform: uppercase;
-          color: #f55f1d;
+          @include typography-1(20, 700, $orange-color);
         }
       }
 
@@ -39,33 +38,113 @@
         align-items: center;
 
         li {
-          font-size: 1em;
-          font-weight: 500;
-          text-transform: capitalize;
-
-          &:nth-child(1) {
-            position: relative;
-            margin-right: 20px;
-            &::after {
-              content: "";
-              background: url("/img/icon/arrow-right-down-bold.png");
-              background-size: contain;
-              background-repeat: no-repeat;
-              width: 20px;
-              height: 20px;
-              position: absolute;
-            }
-            a {
-              padding-right: 1px;
+          a {
+            @include typography-1(16, 500);
+            text-transform: capitalize;
+            &:visited {
+              color: color.scale($black-color, $lightness: 20%);
             }
           }
 
-          &:last-child a {
-            color: #ffffff;
+          a.register {
+            color: $white-color;
+            &:visited {
+              color: $white-color;
+            }
           }
 
           &:nth-child(n + 2):nth-child(-n + 5) {
             margin-left: 30px;
+          }
+
+          .overlay {
+            height: 0;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-y: hidden;
+            transition: 0.5s;
+
+            .closebtn {
+              position: absolute;
+              top: 20px;
+              right: 45px;
+              font-size: 60px;
+            }
+
+            a {
+              padding: 8px;
+              text-decoration: none;
+              font-size: 36px;
+              color: $green-color-light;
+              display: block;
+              transition: 0.3s;
+
+              &:hover,
+              &:focus {
+                color: rgb(32, 177, 90, 0.5);
+              }
+            }
+
+            .overlay-content {
+              position: relative;
+              top: 25%;
+              width: 100%;
+              text-align: center;
+              margin-top: 30px;
+            }
+          }
+
+          @media screen and (max-height: 450px) {
+            .overlay a {
+              font-size: 20px;
+            }
+            .overlay .closebtn {
+              font-size: 40px;
+              top: 15px;
+              right: 35px;
+            }
+          }
+
+          .bi-list {
+            display: none;
+            font-size: em(40);
+            color: $green-color;
+            cursor: pointer;
+            &:hover {
+              color: rgb(32, 177, 90, 0.7);
+            }
+          }
+        }
+
+        li.dropdown {
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+              &:hover {
+                background-color: #ffdcca;
+                color: black;
+              }
+            }
+          }
+          &:hover .dropdown-content {
+            display: block;
           }
         }
       }
@@ -82,31 +161,29 @@
       h1 {
         line-height: 1.4;
         font-weight: bold;
-        font-size: 3.125em;
-        color: #000000;
+        font-size: em(50);
+        color: $black-color;
         margin-bottom: 10px;
       }
       p {
         font-weight: 500;
-        font-size: 1.25em;
+        font-size: em(20);
         margin-bottom: 37px;
       }
       button {
         padding: 20px 30px;
-        font-size: 1.25em;
+        font-size: em(20);
       }
     }
 
     img {
       flex: 1 1 160px;
       object-fit: fill;
-      // max-width: 672px;
-      // max-height: 564px;
     }
   }
 
   .tools {
-    background: #f8fff9;
+    background: $green-color-extra-light;
     top: 0;
 
     .container-tools {
@@ -148,7 +225,7 @@
     }
 
     .divider-tools {
-      background-color: #d7f5dc;
+      background-color: $green-color-light;
       height: 34px;
       width: 100%;
     }
@@ -196,7 +273,15 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include device(sm) {
+  .section-hero header nav .menu li {
+    &:not(:last-child) {
+      display: none;
+    }
+    .bi-list {
+      display: block;
+    }
+  }
   .container-tools {
     flex-direction: column;
     align-items: center;

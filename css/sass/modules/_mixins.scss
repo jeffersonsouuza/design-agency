@@ -1,0 +1,63 @@
+$xxl-device: 1920px;
+$xl-device: 1440px;
+$l-device: 1024px;
+$md-device: 768px;
+$sm-device: 320px;
+
+@mixin device($size) {
+  @if ($size == xxl) {
+    @media screen and (min-width: $xxl-device) {
+      @content;
+    }
+  }
+  @if ($size == xl) {
+    @media screen and (min-width: $xl-device) and (max-width: ($xxl-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == l) {
+    @media screen and (min-width: $l-device) and (max-width: ($xl-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == md) {
+    @media screen and (min-width: $md-device) and (max-width: ($l-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == sm) {
+    @media screen and (max-width: ($md-device - 1)) {
+      @content;
+    }
+  }
+}
+
+@mixin typography-1($font-size: 16, $font-weight, $color: $black-color) {
+  font-family: "Poppins", sans-serif;
+  font-size: em($font-size);
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin typography-2($font-size: 16, $font-weight, $color: $black-color) {
+  font-family: "Avenir", sans-serif;
+  font-size: em($font-size);
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin text-element($content, $color-element, $color-text: $black-color) {
+  &::after {
+    content: "#{$content}";
+    @if ($color-element == yellow) {
+      background-image: url("/img/text-element.png");
+    } @else {
+      background-image: url("/img/text-element-blue.png");
+    }
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: bottom;
+    font-weight: 700;
+    color: $color-text;
+  }
+}

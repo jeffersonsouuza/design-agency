@@ -15,11 +15,13 @@
   <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
-  <link rel="preload" href="/css/style.css" as="style">
-  <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preload" href="./css/style.min.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Fallback caso o preload falhe (opcional, mas recomendado para compatibilidade) -->
+  <noscript>
+    <link rel="stylesheet" href="./css/style.min.css">
+  </noscript>
+
 
   <title>Design Agency</title>
 </head>
@@ -30,12 +32,34 @@
       <header>
         <nav>
           <a class="logo" href="#">design<span>agency</span></a>
-          <ul class="menu">
-            <li><a href="#">services</a></li>
+          <ul class="menu" id="myLinks">
+            <li class="dropdown">
+              <a class="dropbtn" href="#">services &#11167;</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
             <li><a href="#about">about us</a></li>
             <li><a href="#contact">contact us</a></li>
-            <li class="button-outline"><a href="#">login</a></li>
-            <li class="button-main"><a href="#">register</a></li>
+            <li><a class="button-outline" href="#">login</a></li>
+            <li><a class="button-main register" href="#">register</a></li>
+            <li>
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">Services</a>
+                  <a href="#about">About</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#">Login</a>
+                  <a href="#">Register</a>
+                </div>
+              </div>
+              <a onclick="openNav()">
+                <i class="bi-list"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -292,6 +316,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    /* Open */
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    /* Close */
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
 </body>
 
 </html>

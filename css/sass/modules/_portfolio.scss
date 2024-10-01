@@ -1,5 +1,5 @@
 .section-portfolio {
-  background: #ffffff;
+  background: $white-color;
   .container {
     padding: 67px 0;
     header {
@@ -9,12 +9,12 @@
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 15px;
-        color: #20b15a;
+        color: $green-color;
       }
       h2 {
         font-weight: 600;
         font-size: 1.875em;
-        color: #000000;
+        color: $black-color;
       }
     }
     .portfolio {
@@ -53,7 +53,7 @@
         }
       }
       .portfolio-item {
-        color: #000000;
+        color: $black-color;
         h3 {
           font-size: 1.25em;
           font-weight: 600;

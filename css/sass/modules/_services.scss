@@ -1,8 +1,9 @@
 .section-services {
-  background: #ffffff;
+  background: $white-color;
   .container {
     flex-direction: column;
-    padding: 67px 0 67px 0;
+    padding-top: 67px;
+    padding-bottom: 67px;
     header {
       position: relative;
       margin-bottom: 40px;
@@ -11,14 +12,14 @@
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 15px;
-        color: #20b15a;
+        color: $green-color;
       }
       h2 {
         max-width: 495px;
         max-height: 90px;
         font-weight: 600;
         font-size: 1.875em;
-        color: #000000;
+        color: $black-color;
       }
     }
     .services {
@@ -28,7 +29,7 @@
         flex: 1 1 280px;
         padding: 50px 30px;
         img {
-          background: #d7f5dc;
+          background: $green-color-light;
           padding: 30px;
           border-radius: 20px;
           margin-bottom: 15px;
@@ -48,7 +49,7 @@
         .learn-more {
           padding: 15px 20px;
           text-transform: capitalize;
-          color: #000000;
+          color: $black-color;
           display: flex;
           max-width: 159px;
           max-height: 554px;
@@ -62,12 +63,12 @@
             align-self: center;
           }
           &:hover {
-            background: #f55f1d;
+            background: $orange-color;
             border-radius: 10px;
           }
           a {
             padding-right: 10px;
-            color: #000000;
+            color: $black-color;
             &:hover {
               color: white;
             }
