@@ -50,6 +50,10 @@ a {
 
 button {
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+button:hover {
+  transform: scale(1.01);
 }
 
 img {
@@ -81,6 +85,11 @@ img {
   padding: 10px 15px;
   text-transform: capitalize;
   color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.button-main:hover {
+  transform: scale(1.01);
 }
 .button-main:hover {
   background: rgba(32, 177, 90, 0.7);
@@ -118,6 +127,10 @@ img {
   font-size: 1.25em;
   font-weight: 700;
   color: #000000;
+  transition: transform 0.3s ease;
+}
+.section-hero header nav .logo:hover {
+  transform: scale(1.01);
 }
 .section-hero header nav .logo span {
   text-transform: uppercase;
@@ -141,6 +154,11 @@ img {
 }
 .section-hero header nav .menu li a:visited {
   color: #333333;
+}
+.section-hero header nav .menu li .dropbtn:hover,
+.section-hero header nav .menu li .about:hover,
+.section-hero header nav .menu li .contact:hover {
+  color: #20b15a !important;
 }
 .section-hero header nav .menu li a.register {
   color: #ffffff;
@@ -270,6 +288,12 @@ img {
   justify-content: center;
   padding: 44px 0 47px 0;
 }
+.section-hero .tools .container-tools img {
+  transition: transform 0.3s ease;
+}
+.section-hero .tools .container-tools img:hover {
+  transform: scale(1.01);
+}
 .section-hero .tools .container-tools img:not(:nth-child(5)) {
   margin-right: 150px;
 }
@@ -396,6 +420,10 @@ img {
   padding: 30px;
   border-radius: 20px;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.section-services .container .services .services-card img:hover {
+  transform: scale(1.01);
 }
 .section-services .container .services .services-card h3 {
   font-weight: 600;
@@ -443,9 +471,15 @@ img {
     padding: 67px 15px 67px 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-services .container header {
+    margin-bottom: 70px !important;
+  }
+}
 .section-numbers {
   display: flex;
   padding: 80.5px 151px;
+  background: #f8fff9;
 }
 .section-numbers .numbers {
   flex: 1 1 150px;
@@ -463,6 +497,10 @@ img {
 .section-numbers .numbers figure img {
   align-self: center;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.section-numbers .numbers figure img:hover {
+  transform: scale(1.01);
 }
 .section-numbers .numbers figure figcaption {
   font-size: 1em;
@@ -564,6 +602,10 @@ img {
 }
 .section-portfolio .container .portfolio .portfolio-item img {
   margin-bottom: 42.79px;
+  transition: transform 0.3s ease;
+}
+.section-portfolio .container .portfolio .portfolio-item img:hover {
+  transform: scale(1.01);
 }
 
 @media screen and (max-width: 1200px) {
@@ -688,6 +730,11 @@ img {
     left: 15px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-testimonial .container header .slider-control {
+    display: none;
+  }
+}
 .section-subscribe {
   background: #ffffff;
   padding: 91px 0 137px 0;
@@ -810,9 +857,16 @@ footer .container .footer .footer-column-1 .social-media a {
   display: flex;
   justify-content: center;
 }
+footer .container .footer .footer-column-1 .social-media a:hover {
+  background: rgb(76.5602870813, 222.7397129187, 135.0320574163);
+}
 footer .container .footer .footer-column-1 .social-media a img {
   max-width: 18px;
   max-height: 16px;
+  transition: transform 0.3s ease;
+}
+footer .container .footer .footer-column-1 .social-media a img:hover {
+  transform: scale(1.2);
 }
 footer .container .footer .footer-column-2,
 footer .container .footer .footer-column-3 {
@@ -831,6 +885,9 @@ footer .container .footer .footer-column-2 li {
 footer .container .footer .footer-column-2 li a {
   font-size: 1.125em;
   font-weight: 500;
+}
+footer .container .footer .footer-column-2 li a:hover {
+  color: #d7f5dc;
 }
 footer .container .footer .footer-column-3 address {
   font-size: 1.25em;

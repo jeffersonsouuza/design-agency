@@ -1,6 +1,7 @@
 .section-numbers {
   display: flex;
   padding: 80.5px 151px;
+  background: $green-color-extra-light;
   .numbers {
     flex: 1 1 150px;
     display: flex;
@@ -15,6 +16,7 @@
       img {
         align-self: center;
         margin-bottom: 10px;
+        @include zoom();
       }
       figcaption {
         font-size: 1em;

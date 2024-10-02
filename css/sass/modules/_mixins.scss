@@ -46,18 +46,13 @@ $sm-device: 320px;
   color: $color;
 }
 
-@mixin text-element($content, $color-element, $color-text: $black-color) {
-  &::after {
-    content: "#{$content}";
-    @if ($color-element == yellow) {
-      background-image: url("/img/text-element.png");
-    } @else {
-      background-image: url("/img/text-element-blue.png");
-    }
-    background-repeat: no-repeat;
-    background-size: 100% 30%;
-    background-position: bottom;
-    font-weight: 700;
-    color: $color-text;
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin zoom($scale: 1.01) {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale($scale);
   }
 }

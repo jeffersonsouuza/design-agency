@@ -1,3 +1,5 @@
+@use "sass:color";
+
 footer {
   background: #00ca72;
   a {
@@ -34,9 +36,13 @@ footer {
             padding: 11px 16px;
             display: flex;
             justify-content: center;
+            &:hover {
+              background: color.scale($green-color, $lightness: 30%);
+            }
             img {
               max-width: 18px;
               max-height: 16px;
+              @include zoom(1.2);
             }
           }
         }
@@ -57,6 +63,9 @@ footer {
           a {
             font-size: 1.125em;
             font-weight: 500;
+            &:hover {
+              color: $green-color-light;
+            }
           }
         }
       }

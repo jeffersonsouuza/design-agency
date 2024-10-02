@@ -25,6 +25,7 @@
         padding: 10px 0;
         text-transform: capitalize;
         @include typography-1(20, 700);
+        @include zoom();
         span {
           text-transform: uppercase;
           @include typography-1(20, 700, $orange-color);
@@ -44,6 +45,12 @@
             &:visited {
               color: color.scale($black-color, $lightness: 20%);
             }
+          }
+
+          .dropbtn:hover,
+          .about:hover,
+          .contact:hover {
+            color: $green-color !important;
           }
 
           a.register {
@@ -193,6 +200,10 @@
       flex-wrap: wrap;
       justify-content: center;
       padding: 44px 0 47px 0;
+
+      img {
+        @include zoom();
+      }
 
       img:not(:nth-child(5)) {
         margin-right: 150px;

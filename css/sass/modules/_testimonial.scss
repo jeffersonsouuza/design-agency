@@ -105,3 +105,9 @@
     left: 15px;
   }
 }
+
+@include device(sm) {
+  .section-testimonial .container header .slider-control {
+    display: none;
+  }
+}
