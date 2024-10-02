@@ -27,10 +27,11 @@
         align-items: center;
       }
     }
+    div,
     span {
       color: $green-color;
       font-weight: 600;
-      font-size: 2em;
+      font-size: em(30);
       text-align: center;
     }
   }

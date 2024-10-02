@@ -493,10 +493,11 @@ img {
   justify-content: center;
   align-items: center;
 }
+.section-numbers .numbers div,
 .section-numbers .numbers span {
   color: #20b15a;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.875em;
   text-align: center;
 }
 
