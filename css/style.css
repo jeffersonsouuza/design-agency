@@ -437,33 +437,16 @@ img {
   margin-bottom: 43px;
   color: 0;
 }
-.section-services .container .services .services-card .learn-more {
+.section-services .container .services .services-card .learn-more a {
+  color: #000000;
   padding: 15px 20px;
   text-transform: capitalize;
   color: #000000;
-  display: flex;
-  max-width: 159px;
-  max-height: 554px;
-}
-.section-services .container .services .services-card .learn-more::after {
-  content: "";
-  background: url("/img/icon/arrow-right.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 16px;
-  height: 14px;
-  align-self: center;
-}
-.section-services .container .services .services-card .learn-more:hover {
-  background: #f55f1d;
-  border-radius: 10px;
-}
-.section-services .container .services .services-card .learn-more a {
-  padding-right: 10px;
-  color: #000000;
 }
 .section-services .container .services .services-card .learn-more a:hover {
-  color: white;
+  color: #ffffff;
+  background: #f55f1d;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {

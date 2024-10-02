@@ -48,30 +48,15 @@
           color: 000000;
         }
         .learn-more {
-          padding: 15px 20px;
-          text-transform: capitalize;
-          color: $black-color;
-          display: flex;
-          max-width: 159px;
-          max-height: 554px;
-          &::after {
-            content: "";
-            background: url("/img/icon/arrow-right.png");
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 16px;
-            height: 14px;
-            align-self: center;
-          }
-          &:hover {
-            background: $orange-color;
-            border-radius: 10px;
-          }
           a {
-            padding-right: 10px;
+            color: $black-color;
+            padding: 15px 20px;
+            text-transform: capitalize;
             color: $black-color;
             &:hover {
-              color: white;
+              color: $white-color;
+              background: $orange-color;
+              border-radius: 10px;
             }
           }
         }
