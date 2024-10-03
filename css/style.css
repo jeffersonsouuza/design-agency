@@ -45,6 +45,7 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -151,6 +152,10 @@ img {
   font-weight: 500;
   color: #000000;
   text-transform: capitalize;
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
 .section-hero header nav .menu li a:visited {
   color: #333333;
@@ -170,6 +175,7 @@ img {
   margin-left: 30px;
 }
 .section-hero header nav .menu li .overlay {
+  display: none;
   height: 0;
   width: 100%;
   position: fixed;
@@ -186,6 +192,8 @@ img {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  cursor: pointer;
+  color: #ffffff;
 }
 .section-hero header nav .menu li .overlay a {
   padding: 8px;
@@ -204,6 +212,9 @@ img {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+.section-hero header nav .menu li .icon-menu-hamburguer {
+  cursor: pointer !important;
 }
 @media screen and (max-height: 450px) {
   .section-hero header nav .menu li .overlay a {

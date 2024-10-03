@@ -42,6 +42,10 @@
           a {
             @include typography-1(16, 500);
             text-transform: capitalize;
+            min-width: 48px;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
             &:visited {
               color: color.scale($black-color, $lightness: 20%);
             }
@@ -65,6 +69,7 @@
           }
 
           .overlay {
+            display: none;
             height: 0;
             width: 100%;
             position: fixed;
@@ -81,6 +86,8 @@
               top: 20px;
               right: 45px;
               font-size: 60px;
+              cursor: pointer;
+              color: $white-color;
             }
 
             a {
@@ -104,6 +111,10 @@
               text-align: center;
               margin-top: 30px;
             }
+          }
+
+          .icon-menu-hamburguer {
+            cursor: pointer !important;
           }
 
           @media screen and (max-height: 450px) {

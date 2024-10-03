@@ -4,8 +4,11 @@ import "./../css/style.css";
 import SimpleAnime from "./modules/SimpleAnime.js";
 import AnimaNumeros from "./modules/AnimaNumeros.js";
 
-window.openNav = () =>
-  (document.getElementById("navMobile").style.height = "100%");
+window.openNav = () => {
+  const nav = document.getElementById("navMobile");
+  nav.style.display = "block";
+  nav.style.height = "100%";
+};
 
 window.closeNav = () =>
   (document.getElementById("navMobile").style.height = "0%");
