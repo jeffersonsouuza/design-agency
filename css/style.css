@@ -501,12 +501,15 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .section-numbers {
     padding: 80.5px 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .section-numbers .numbers {
+    flex: 1 1 300px;
+  }
   .section-numbers .numbers:last-child {
     border-right: none;
   }

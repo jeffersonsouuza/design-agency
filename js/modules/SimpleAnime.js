@@ -1,4 +1,4 @@
-window.SimpleAnime = class {
+export default window.SimpleAnime = class {
   constructor() {
     this.items = document.querySelectorAll("[data-anime]");
     this.init();
