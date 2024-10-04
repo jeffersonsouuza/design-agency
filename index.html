@@ -74,15 +74,43 @@
     </div>
 
     <div class="tools">
-      <div class="container-tools">
-        <img src="./img/business-tools/google.png" alt="icon google" class="tools-items tools-item__google" loading="lazy">
-        <img src="./img/business-tools/trello.png" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
-        <img src="./img/business-tools/monday.png" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
-        <img src="./img/business-tools/notion.png" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
-        <img src="./img/business-tools/slack.png" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
+      <div class="tools-group">
+        <div class="tools-image">
+          <img src="./img/business-tools/google.png" alt="icon google" class="tools-items tools-item__google" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/trello.png" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/monday.png" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/notion.png" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/slack.png" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
+        </div>
       </div>
-      <div class="divider-tools"></div>
+
+      <div aria-hidden class="tools-group">
+        <div class="tools-image">
+          <img src="./img/business-tools/google.png" alt="icon google" class="tools-items tools-item__google" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/trello.png" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/monday.png" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/notion.png" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
+        </div>
+        <div class="tools-image">
+          <img src="./img/business-tools/slack.png" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
+        </div>
+      </div>
     </div>
+    <div class="divider-tools"></div>
   </section>
 
   <main class="section-services">
@@ -225,8 +253,8 @@
           <h2>See what our customer <br> say about us</h2>
         </div>
         <div class="slider-control fadeInRight" data-anime="100">
-          <button class=" return"><img src="./img/icon/arrow-left-bold.png" alt="icone controle esquerda" loading="lazy"></button>
-          <button class="advance"><img src="./img/icon/arrow-right-bold.png" alt="icone controle direita" loading="lazy"></button>
+          <button id="prevButton" class="return"><img src="./img/icon/arrow-left-bold.png" alt="icone controle esquerda" loading="lazy"></button>
+          <button id="nextButton" class="advance"><img src="./img/icon/arrow-right-bold.png" alt="icone controle direita" loading="lazy"></button>
         </div>
       </header>
       <div class="testimonial fadeInRight" data-anime="300">

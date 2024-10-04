@@ -3,6 +3,7 @@ import "./../css/style.css";
 
 import SimpleAnime from "./modules/SimpleAnime.js";
 import AnimaNumeros from "./modules/AnimaNumeros.js";
+import "./modules/slider-control.js";
 
 window.openNav = () => {
   const nav = document.getElementById("navMobile");

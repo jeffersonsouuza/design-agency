@@ -202,55 +202,44 @@
 
   .tools {
     background: $green-color-extra-light;
-    top: 0;
+    margin: 0 auto;
+    padding: 44px 0 47px 0;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    > * {
+      flex: 0 0 100%;
+    }
+    &:hover .tools-group {
+      animation-play-state: paused;
+    }
 
-    .container-tools {
-      max-width: 1222px;
-      margin: 0 auto;
+    .tools-group {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 44px 0 47px 0;
-
-      img {
-        @include zoom();
-      }
-
-      img:not(:nth-child(5)) {
-        margin-right: 150px;
-      }
-
-      .tools-item__google {
-        width: 88.71px;
-        height: 29.11px;
-      }
-
-      .tools-item__trello {
-        width: 141.94px;
-        height: 29.11px;
-      }
-
-      .tools-item__monday {
-        width: 156.88px;
-        height: 29.11px;
-      }
-
-      .tools-item__notion {
-        width: 80.11px;
-        height: 29.11px;
-      }
-
-      .tools-item__slack {
-        width: 114.29px;
-        height: 29.11px;
+      gap: 25px;
+      padding-right: 20px;
+      will-change: transform;
+      animation: scrolling 10s linear infinite;
+      .tools-image {
+        width: 100%;
+        img {
+          @include zoom(1.2);
+        }
       }
     }
-
-    .divider-tools {
-      background-color: $green-color-light;
-      height: 34px;
-      width: 100%;
+    @keyframes scrolling {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
+  }
+  .divider-tools {
+    background-color: $green-color-light;
+    height: 34px;
+    width: 100%;
   }
 }
 
