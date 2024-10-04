@@ -59,8 +59,7 @@ button:hover {
 
 img {
   display: block;
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
 }
 
 .container {
@@ -286,7 +285,8 @@ img {
 }
 .section-hero .banner-hero img {
   flex: 1 1 160px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .section-hero .tools {
   background: #f8fff9;
@@ -422,36 +422,20 @@ img {
 .section-services .container .services {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
 }
 .section-services .container .services .services-card {
   flex: 1 1 280px;
   padding: 50px 30px;
-  transition: border-radius 0.4s ease, box-shadow 0.4s ease;
 }
-.section-services .container .services .services-card:hover {
-  border-radius: 30px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-}
-.section-services .container .services .services-card:hover .learn-more a {
-  color: #ffffff;
-  background: #f55f1d;
-  border-radius: 10px;
-  transition: background 0.4s ease, color 0.4s ease;
-}
-.section-services .container .services .services-card .services-icon {
-  padding: 30px;
+.section-services .container .services .services-card img {
   background: #d7f5dc;
+  padding: 30px;
   border-radius: 20px;
   margin-bottom: 15px;
-  max-width: 93px;
-  max-height: 93px;
-}
-.section-services .container .services .services-card .services-icon img {
   transition: transform 0.3s ease;
 }
-.section-services .container .services .services-card .services-icon img:hover {
-  transform: scale(1.2);
+.section-services .container .services .services-card img:hover {
+  transform: scale(1.01);
 }
 .section-services .container .services .services-card h3 {
   font-weight: 600;
@@ -470,10 +454,11 @@ img {
   padding: 15px 20px;
   text-transform: capitalize;
   color: #000000;
-  transition: transform 0.3s ease;
 }
 .section-services .container .services .services-card .learn-more a:hover {
-  transform: scale(1.01);
+  color: #ffffff;
+  background: #f55f1d;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -872,7 +857,7 @@ footer .container .footer .footer-column-1 .social-media a {
   justify-content: center;
 }
 footer .container .footer .footer-column-1 .social-media a:hover {
-  background: rgb(76.5602870813, 222.7397129187, 135.0320574163);
+  background: #4ddf87;
 }
 footer .container .footer .footer-column-1 .social-media a img {
   max-width: 18px;
@@ -942,6 +927,4 @@ footer .container .copyright {
   opacity: 1;
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

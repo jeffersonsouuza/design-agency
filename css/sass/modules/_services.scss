@@ -25,15 +25,31 @@
     .services {
       display: flex;
       flex-wrap: wrap;
+      gap: 45px;
       .services-card {
         flex: 1 1 280px;
         padding: 50px 30px;
-        img {
-          background: $green-color-light;
+        transition: border-radius 0.4s ease, box-shadow 0.4s ease;
+        &:hover {
+          border-radius: 30px;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          .learn-more a {
+            color: $white-color;
+            background: $orange-color;
+            border-radius: 10px;
+            transition: background 0.4s ease, color 0.4s ease;
+          }
+        }
+        .services-icon {
           padding: 30px;
+          background: $green-color-light;
           border-radius: 20px;
           margin-bottom: 15px;
-          @include zoom();
+          max-width: 93px;
+          max-height: 93px;
+          img {
+            @include zoom(1.2);
+          }
         }
         h3 {
           font-weight: 600;
@@ -53,11 +69,7 @@
             padding: 15px 20px;
             text-transform: capitalize;
             color: $black-color;
-            &:hover {
-              color: $white-color;
-              background: $orange-color;
-              border-radius: 10px;
-            }
+            @include zoom();
           }
         }
       }
