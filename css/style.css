@@ -307,7 +307,7 @@ img {
   gap: 25px;
   padding-right: 20px;
   will-change: transform;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 15s linear infinite;
 }
 .section-hero .tools .tools-group .tools-image {
   width: 100%;
