@@ -46,6 +46,7 @@
             min-height: 48px;
             display: flex;
             align-items: center;
+            cursor: pointer;
             &:visited {
               color: color.scale($black-color, $lightness: 20%);
             }

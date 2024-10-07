@@ -157,6 +157,7 @@ img {
   min-height: 48px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .section-hero header nav .menu li a:visited {
   color: #333333;
@@ -390,6 +391,140 @@ img {
     font-size: 1em;
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.05);
+  width: 598px;
+  max-height: 550px;
+  position: relative;
+}
+.modal .modal-content .close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: #aaa;
+  font-size: 28px;
+  cursor: pointer;
+}
+.modal .modal-content .close:hover, .modal .modal-content .close:focus {
+  color: black;
+}
+.modal .modal-content .logo {
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #000000;
+  transition: transform 0.3s ease;
+  margin-bottom: 25px;
+}
+.modal .modal-content .logo:hover {
+  transform: scale(1.01);
+}
+.modal .modal-content .logo span {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #f55f1d;
+}
+.modal .modal-content p {
+  font-family: "Avenir", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  color: rgb(127.5, 127.5, 127.5);
+}
+.modal .modal-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.modal .modal-content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.modal .modal-content form label {
+  font-family: "Avenir", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.modal .modal-content form label.password {
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modal-content form label.password a {
+  font-family: "Avenir", sans-serif;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #000000;
+}
+.modal .modal-content form label.password a:visited {
+  color: #333333;
+}
+.modal .modal-content form input {
+  font-family: "Avenir", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #000000;
+  background-color: rgb(254, 239, 232.4);
+  border: rgb(253, 223, 209.8);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.modal .modal-content form .button-login {
+  display: flex;
+  justify-content: center;
+}
+.modal .modal-content form .button-login button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000000;
+  padding: 10px 40px;
+  background: #f55f1d;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 23px;
+  border: 1px solid #f55f1d;
+  margin-top: 20px;
+}
+.modal .modal-content form .button-login button:hover {
+  background: rgb(246, 111, 51.6);
+  border-color: rgb(246, 111, 51.6);
+}
+.modal .modal-content .signUp {
+  text-align: center;
+}
+.modal .modal-content .signUp span {
+  color: #f55f1d;
+}
+
 .section-services {
   background: #ffffff;
 }
@@ -895,8 +1030,8 @@ footer .container .footer .footer-column-1 .social-media a:hover {
   background: rgb(76.5602870813, 222.7397129187, 135.0320574163);
 }
 footer .container .footer .footer-column-1 .social-media a img {
-  max-width: 18px;
-  max-height: 16px;
+  max-width: 18px !important;
+  max-height: 16px !important;
   transition: transform 0.3s ease;
 }
 footer .container .footer .footer-column-1 .social-media a img:hover {

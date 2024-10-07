@@ -40,8 +40,8 @@ footer {
               background: color.scale($green-color, $lightness: 30%);
             }
             img {
-              max-width: 18px;
-              max-height: 16px;
+              max-width: 18px !important;
+              max-height: 16px !important;
               @include zoom(1.2);
             }
           }
