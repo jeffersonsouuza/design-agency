@@ -26,14 +26,14 @@
 </head>
 
 <body>
-  <section class="section-hero" data-anime="100" class="fadeInDown">
+  <section class="section-hero" id="hero" data-anime="100" class="fadeInDown">
     <div class="container">
       <header>
         <nav class="nav">
           <a class="logo" href="/">design<span>agency</span></a>
           <ul class="menu" id="myLinks">
             <li class="dropdown">
-              <a class="dropbtn">services &#11167;</a>
+              <div class="dropbtn nav-link">services &#11167;</div>
               <div class="dropdown-content">
                 <a href="#services">Link 1</a>
                 <a href="#services">Link 2</a>
@@ -42,8 +42,12 @@
             </li>
             <li><a class="about" href="#about">about us</a></li>
             <li><a class="contact" href="#contact">contact us</a></li>
-            <li><a class="button-outline openLoginModal">login</a></li>
-            <li><a class="button-main register openRegisterModal">register</a></li>
+            <li>
+              <div class="button-outline openLoginModal nav-link">login</div>
+            </li>
+            <li>
+              <div class="button-main register openRegisterModal nav-link">register</div>
+            </li>
             <li>
               <div id="navMobile" class="overlay">
                 <span class="closebtn" onclick="closeNav()">&times;</span>
@@ -51,8 +55,8 @@
                   <a href="#services">Services</a>
                   <a href="#about">About</a>
                   <a href="#contact">Contact</a>
-                  <a class="openLoginModal">Login</a>
-                  <a class="openRegisterModal">Register</a>
+                  <div class="openLoginModal nav-link">Login</div>
+                  <div class="openRegisterModal nav-link">Register</div>
                 </div>
               </div>
               <span class="icon-menu-hamburguer" onclick="openNav()">
@@ -376,8 +380,9 @@
           <address data-anime="100" class="fadeInDown">Design Agency Head Office. <br> Airport Road <br> United Arab Emirate</address>
         </div>
       </div>
-      <div class="copyright">
-        Copyright Design Agency 2022
+      <div class="copyright nav">
+        <p>Copyright Design Agency 2022</p>
+        <a href="#hero" class="back-button nav-link">back to top </a>
       </div>
     </div>
   </footer>

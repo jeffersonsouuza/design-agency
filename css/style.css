@@ -70,6 +70,10 @@ img {
   flex-wrap: wrap;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .button-outline {
   border: 1px solid #20b15a;
   border-radius: 10px;
@@ -1063,9 +1067,29 @@ footer .container .footer .footer-column-3 address {
   font-weight: 500;
 }
 footer .container .copyright {
-  font-size: 1.25em;
-  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 29px;
+}
+footer .container .copyright p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #000000;
+}
+footer .container .copyright .back-button {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000000;
+}
+footer .container .copyright .back-button:hover {
+  transition: transform 0.3s ease;
+  color: white;
+}
+footer .container .copyright .back-button:hover:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {

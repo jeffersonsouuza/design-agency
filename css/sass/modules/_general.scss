@@ -72,6 +72,10 @@ img {
   flex-wrap: wrap;
 }
 
+.nav-link {
+  cursor: pointer;
+}
+
 .button-outline {
   border: 1px solid $green-color;
   border-radius: 10px;

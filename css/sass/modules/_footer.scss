@@ -77,9 +77,23 @@ footer {
       }
     }
     .copyright {
-      font-size: 1.25em;
-      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       margin-bottom: 29px;
+      p {
+        @include typography-1(18, 500);
+      }
+      .back-button {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $black-color;
+        &:hover {
+          @include zoom(1.1);
+          color: color.scale($white-color, $lightness: 30%);
+        }
+      }
     }
   }
 }
