@@ -3,7 +3,7 @@
   "description": "website para uma agencia onde o design criado por Femi John, e desenvolvido por Jefferson Souza, utilizando tecnologias HTML, CSS (SASS), JAVASCRIPT, WEBPACK",
   "private": true,
   "scripts": {
-    "dev": "sass css/sass/style.scss css/style.css",
+    "dev": "sass --watch css/sass/style.scss css/style.css",
     "build": "webpack",
     "start": "webpack serve --mode development"
   },

@@ -15,11 +15,12 @@
   <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <link rel="manifest" href="./img/favicon/site.webmanifest">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="./css/style.css" as="style" onload="this.rel='stylesheet'">
   <!-- Fallback caso o preload falhe (opcional, mas recomendado para compatibilidade) -->
   <noscript>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </noscript>
 
   <title>Design Agency</title>
@@ -33,7 +34,7 @@
           <a class="logo" href="/">design<span>agency</span></a>
           <ul class="menu" id="myLinks">
             <li class="dropdown">
-              <div class="dropbtn nav-link">services &#11167;</div>
+              <div class="dropbtn nav-link">services <i class="bi bi-chevron-down"></i></div>
               <div class="dropdown-content">
                 <a href="#services">Link 1</a>
                 <a href="#services">Link 2</a>
@@ -81,27 +82,27 @@
       <div class="tools-group">
         <div class="tools-image">
           <a href="https://www.google.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/google.png" alt="icon google" class="tools-items tools-item__google" loading="lazy">
+            <img src="./img/business-tools/google.png" width="89" height="30" alt="icon google" class="tools-items tools-item__google" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://trello.com/pt-BR" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/trello.png" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
+            <img src="./img/business-tools/trello.png" width="143" height="30" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://monday.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/monday.png" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
+            <img src="./img/business-tools/monday.png" width="158" height="30" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://www.notion.so/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/notion.png" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
+            <img src="./img/business-tools/notion.png" width="81" height="30" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://slack.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/slack.png" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
+            <img src="./img/business-tools/slack.png" width="115" height="30" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
           </a>
         </div>
       </div>
@@ -109,27 +110,27 @@
       <div aria-hidden class="tools-group">
         <div class="tools-image">
           <a href="https://www.google.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/google.png" alt="icon google" class="tools-items tools-item__google" loading="lazy">
+            <img src="./img/business-tools/google.png" width="89" height="30" alt="icon google" class="tools-items tools-item__google" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://trello.com/pt-BR" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/trello.png" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
+            <img src="./img/business-tools/trello.png" width="143" height="30" alt="icon trello" class="tools-items tools-item__trello" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://monday.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/monday.png" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
+            <img src="./img/business-tools/monday.png" width="158" height="30" alt="icon monday" class="tools-items tools-item__monday" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://www.notion.so/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/notion.png" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
+            <img src="./img/business-tools/notion.png" width="81" height="30" alt="icon notion" class="tools-items tools-item__notion" loading="lazy">
           </a>
         </div>
         <div class="tools-image">
           <a href="https://slack.com/" target="_blank" rel=”noopener noreferer”>
-            <img src="./img/business-tools/slack.png" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
+            <img src="./img/business-tools/slack.png" width="115" height="30" alt="icon slack" class="tools-items tools-item__slack" loading="lazy">
           </a>
         </div>
       </div>
@@ -153,7 +154,7 @@
             <p>We help identify the best ways to improve your business</p>
           </div>
           <div class="learn-more">
-            <a href="#" data-anime="100" class="fadeInLeft">learn more &#129106;</a>
+            <a href="#" data-anime="100" class="fadeInLeft">learn more <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="services-card">
@@ -165,7 +166,7 @@
             <p>We help identify the best ways to improve your business</p>
           </div>
           <div class="learn-more">
-            <a href="#" data-anime="100" class="fadeInLeft">learn more &#129106;</a>
+            <a href="#" data-anime="100" class="fadeInLeft">learn more <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
         <div class="services-card">
@@ -177,7 +178,7 @@
             <p>We help identify the best ways to improve your business</p>
           </div>
           <div class="learn-more">
-            <a href="#" data-anime="100" class="fadeInLeft">learn more &#129106;</a>
+            <a href="#" data-anime="100" class="fadeInLeft">learn more <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
