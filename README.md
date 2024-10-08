@@ -11,8 +11,9 @@ Deploy: https://jeffersonsouuza.github.io/design-agency
 ## Tecnologias Utilizadas
 
 - **HTML5**
-- **CSS3** (com Flexbox)
+- **CSS3**
 - **Sass**
+- **Webpack**
 
 ## Como Configurar o Projeto
 
@@ -35,7 +36,7 @@ Antes de começar, certifique-se de ter o **Node.js** e o **npm** instalados em 
    Após clonar o repositório, entre na pasta do projeto:
 
    ```bash
-   cd nome-do-repositorio
+   cd design-agency
    ```
 
 3. **Instale as dependências do projeto:**
@@ -48,23 +49,42 @@ Antes de começar, certifique-se de ter o **Node.js** e o **npm** instalados em 
 
 ## Como Usar
 
+### Desenvolvimento
+
+Para iniciar o servidor de desenvolvimento com Webpack, execute o seguinte comando:
+
+```bash
+npm run start
+```
+
 ### Compilando Sass
 
-Para compilar os arquivos Sass e assistir por mudanças, execute o script abaixo:
+Para compilar os arquivos Sass, execute o script abaixo:
 
 ```bash
 npm run dev
 ```
 
-### Minificando o CSS
+### Build de Produção
 
-Para reduzir o tamanho do CSS para produção, use o script:
+Para gerar os arquivos otimizados e prontos para produção, execute o comando:
 
 ```bash
-npm run prod
+npm run build
 ```
 
-Este comando irá gerar um arquivo minificado style.min.css a partir do style.css original.
+Este comando irá gerar uma versão minificada e otimizada dos arquivos na pasta dist/.
+
+## Estrutura de Pastas
+
+```bash
+/css               # Arquivos CSS
+/js                # Arquivos JavaScript
+/img               # Imagens do projeto
+/fonts             # Fontes usadas no projeto
+/src               # Código-fonte usado durante o desenvolvimento
+/dist              # Arquivos de produção gerados pelo Webpack
+```
 
 ## Créditos
 
