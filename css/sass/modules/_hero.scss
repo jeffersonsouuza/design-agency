@@ -24,6 +24,7 @@
       .logo {
         padding: 10px 0;
         text-transform: capitalize;
+        cursor: pointer;
         @include typography-1(20, 700);
         @include zoom();
         span {

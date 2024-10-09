@@ -129,6 +129,7 @@ img {
 .section-hero header nav .logo {
   padding: 10px 0;
   text-transform: capitalize;
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 1.25em;
   font-weight: 700;
