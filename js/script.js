@@ -6,14 +6,23 @@ import "./modules/slider-control.js";
 import Modal from "./modules/Modal.js";
 import SmoothScroll from "./modules/SmoothScroll.js";
 
+const nav = document.getElementById("navMobile");
 window.openNav = () => {
-  const nav = document.getElementById("navMobile");
   nav.style.display = "block";
   nav.style.height = "100%";
 };
 
 window.closeNav = () =>
   (document.getElementById("navMobile").style.height = "0%");
+
+if (nav) {
+  const navLinks = document.querySelectorAll(
+    ".overlay .overlay-content .nav-link"
+  );
+  navLinks.forEach((links) => {
+    links.addEventListener("click", () => window.closeNav());
+  });
+}
 
 if (window.SimpleAnime) {
   new SimpleAnime();
@@ -28,6 +37,15 @@ loginModal.addEventListeners();
 
 const registerModal = new Modal("registerModal", ".openRegisterModal");
 registerModal.addEventListeners();
+
+const loginModalMobile = new Modal("loginModal", ".openLoginModalMobile");
+loginModalMobile.addEventListeners();
+
+const registerModalMobile = new Modal(
+  "registerModal",
+  ".openRegisterModalMobile"
+);
+registerModalMobile.addEventListeners();
 
 const smoothScroll = new SmoothScroll(".nav", 0, 2000);
 smoothScroll.init();

@@ -9,7 +9,7 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 module.exports = {
   entry: "./js/script.js",
   output: {
-    filename: "bundle.js",
+    filename: "js/script.js",
     path: path.resolve(__dirname, "docs"),
     clean: true,
   },

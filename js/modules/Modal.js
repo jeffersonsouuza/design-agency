@@ -1,7 +1,7 @@
 export default class Modal {
-  constructor(modalId, triggerId) {
+  constructor(modalId, triggerClass) {
     this.modal = document.getElementById(modalId);
-    this.trigger = document.querySelector(triggerId);
+    this.trigger = document.querySelector(triggerClass);
     this.closeBtn = this.modal.querySelector(".close");
   }
 
