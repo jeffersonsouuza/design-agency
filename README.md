@@ -14,6 +14,7 @@ Deploy: https://jeffersonsouuza.github.io/design-agency
 - **CSS3**
 - **Sass**
 - **Webpack**
+- **ESLint**
 
 ## Como Configurar o Projeto
 
